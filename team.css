@@ -230,24 +230,32 @@ img {
 .close:hover {
   background: #8baaff;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1400px) {
   .tab button {
     width: 33.3%;
+    height: 80px;
+  }
+  .image-cropper {
+    max-height: 25vh;
   }
 }
-@media screen and (max-width: 800px){
-  .tab button {
+@media screen and (max-width: 850px){
+  /* two images/people/bios per row */
+  .column {
     width: 50%;
+  }
+  .popup .popuptext {
+    width: 40vw;
   }
 }
 @media screen and (max-width: 650px) {
+  /* one image/person/bio per row */
   .column {
     width: 100%;
     display: block;
   }
   .image-cropper {
     max-width: calc(225px - 10%);
-    max-height: 25vh;
   }
   .popup .popuptext {
     width: 90vw;
@@ -260,11 +268,6 @@ img {
   }
   .maininfo1{
     width: 100%;
-  }
-}
-@media screen and (max-width: 560px) {
-  .tab button {
-    height: 80px;
   }
 }
 @media screen and (max-width: 450px) {
