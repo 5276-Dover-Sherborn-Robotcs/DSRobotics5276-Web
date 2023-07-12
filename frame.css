@@ -303,7 +303,7 @@ nav .nav-bar .nav-bar_item a:hover:after {
 
 /* resize responsive */
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
   .footer-distributed .footer-left, .footer-distributed .footer-right {
     text-align: center;
   }
