@@ -297,6 +297,15 @@ nav .nav-bar .nav-bar_item a:hover:after {
   transition:all .25s;
 }
 
+.footer-distributed .footer-right p {
+  display: inline-block;
+  font: normal 16px sans-serif;
+  color: var(--text-color);
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+}
+
 .footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
 
 .footer-distributed p.footer-links a:hover{text-decoration:underline;}
