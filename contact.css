@@ -56,7 +56,6 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 150px;
-  text-align: left;
 }
 .maininfo .email:hover{
   text-decoration: underline;
@@ -72,65 +71,50 @@
   cursor: pointer;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-/* sponsor group (card organization) */
-.sponsor{
-  width: calc(150px + 20vw);
-  line-height: 20pt;
-  display: block;
+.column {
   float: left;
   text-align: center;
-  padding-top: 40px;
-}
-.sponsor:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-column{
-  position: relative;
-  display: block;
-  width: 100%;
-  font-weight: bold;
+  width: 33.33%;
+  line-height: 20pt;
+  padding: 20px;
   margin: auto;
-  padding: 10px;
+}
+.row{
+  border-radius: 10px;
+  padding-top: 30px;
 }
 h2{
   font-weight: 100;
 }
-h2.column{
-  color: #1bb4c2;
-  font-weight: bold;
-  font-style: italic;
-  text-align: center;
-  padding-bottom: 20px;
-}
-h2.team{
-  padding-bottom: 10px;
-}
 
-@media (max-width: 600px) {
+@media (max-width: 1100px) {
+  .column{
+    width: 50%;
+  }
+}
+@media (max-width: 1000px) {
+  .maininfo{
+    margin-bottom: 300px;
+  }
+}
+@media (max-width: 750px) {
   .maininfo {
     text-decoration: none;
     text-align: center;
     overflow-wrap: break-word;
-    margin: auto;
-    margin-bottom: 300px;
     width: 100%;
   }
   h1{
     font-size: 30px;
     line-height: 22pt;
   }
-  h2.team{
-    padding-bottom: 10px;
-    font-size: 20px;
-  }
   .responsive {
     width: 200px;
     height: auto;
   }
-  .sponsor{
+  .column{
     width: 100%;
+    float: center;
   }
 }
 
