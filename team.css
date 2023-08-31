@@ -86,6 +86,7 @@ h2{
   width: 33.33%;
   height: 100%;
 }
+
 .card {
   margin-bottom: 50px;
 }
@@ -237,6 +238,7 @@ img {
 .close:hover {
   background: #8baaff;
 }
+
 @media screen and (max-width: 1400px) {
   .tab button {
     width: 33.3%;
@@ -248,8 +250,13 @@ img {
 }
 @media screen and (max-width: 850px){
   /* two images/people/bios per row */
+
   .column {
     width: 50%;
+  }
+  .column[style] {
+    margin-left: 0% !important;
+    margin-right: 0% !important;
   }
   .popup .popuptext {
     width: 40vw;
