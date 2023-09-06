@@ -82,6 +82,7 @@
 .row{
   border-radius: 10px;
   padding-top: 30px;
+  display: block;
 }
 h2{
   font-weight: 100;
