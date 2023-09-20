@@ -203,20 +203,20 @@ a .content{
 }
 
 .content.one{
-  background-image: url("5276in2012.png");
+  background-image: url("/images/5276in2012.png");
   background-size: cover; 
   /*   left-right up-down   --0 is the top of the image*/
   background-position: center 10%;
 }
 
 .content.two{
-  background-image: url("2022-23.png");
+  background-image: url("/images/2022-23.png");
   background-size: cover; 
   background-position: center 30%;
 }
 
 .content.three{
-  background-image: url("welcome.jpg");
+  background-image: url("/images/welcome.jpg");
   background-size: cover; 
   background-position: center 45%;
 }

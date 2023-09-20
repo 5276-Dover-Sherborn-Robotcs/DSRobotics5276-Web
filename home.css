@@ -1,5 +1,5 @@
 body{
-  background-image: url("wholeTeam.jpg");
+  background-image: url("/images/wholeTeam.jpg");
   background-size: cover; 
 /*   overflow: hidden; */
 }
