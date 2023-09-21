@@ -12,58 +12,58 @@ function responsive() {
   }
 }
 
-//code to open popup
-var isPopOpen = false;
-var first = true;
-var otherElement = false;
-var y;
-var popup;
+// //code to open popup (old code we can remove later)
+// var isPopOpen = false;
+// var first = true;
+// var otherElement = false;
+// var y;
+// var popup;
 
-function openPopup(x){
-  //you've clicked on a popup somewhere
-  //if a popup is already open
-  if (isPopOpen){
-    //hide old popup
-    popup = document.getElementById(y);
-    popup.classList.toggle("show");
-    //show new popup
-    popup = document.getElementById(x);
-    popup.classList.toggle("show");
-    y = x; 
-    otherElement = true;
-  }
-  //otherwise show the popup
-  else {
-    y = x; 
-    popup = document.getElementById(x);
-    popup.classList.toggle("show");
-    isPopOpen = true;
-  }
-}
-//if i click anywhere...
-window.addEventListener('click', function(e){ 
-  if (isPopOpen){
-    //if this is the first time im clicking on an element, dont do anything
-    if (first){
-      first = false;
-    }
-    else{
-      //if i click outside of the open popup...
-      if (!popup.contains(e.target)) {
-        //if no element is currently open
-        if (!otherElement){
-          document.getElementById(y).classList.remove("show");
-          isPopOpen = false;
-          first = true;
-        }
-        //if another element is already open, dont hide the current popup
-        else{
-          otherElement = false;
-        }
-      }
-    }
-  }
-});
+// function openPopup(x){
+//   //you've clicked on a popup somewhere
+//   //if a popup is already open
+//   if (isPopOpen){
+//     //hide old popup
+//     popup = document.getElementById(y);
+//     popup.classList.toggle("show");
+//     //show new popup
+//     popup = document.getElementById(x);
+//     popup.classList.toggle("show");
+//     y = x; 
+//     otherElement = true;
+//   }
+//   //otherwise show the popup
+//   else {
+//     y = x; 
+//     popup = document.getElementById(x);
+//     popup.classList.toggle("show");
+//     isPopOpen = true;
+//   }
+// }
+// //if i click anywhere...
+// window.addEventListener('click', function(e){ 
+//   if (isPopOpen){
+//     //if this is the first time im clicking on an element, dont do anything
+//     if (first){
+//       first = false;
+//     }
+//     else{
+//       //if i click outside of the open popup...
+//       if (!popup.contains(e.target)) {
+//         //if no element is currently open
+//         if (!otherElement){
+//           document.getElementById(y).classList.remove("show");
+//           isPopOpen = false;
+//           first = true;
+//         }
+//         //if another element is already open, dont hide the current popup
+//         else{
+//           otherElement = false;
+//         }
+//       }
+//     }
+//   }
+// });
 
 //change between alumni and students tab
 var i, tabcontent, tablinks;
