@@ -87,7 +87,7 @@ html {
 .column {
   float: left;
   text-align: center;
-  width: 33.33%;
+  width: 25%;
   height: 100%;
 }
 .container {
@@ -106,10 +106,16 @@ html {
   display: table;
 }
 
-img {
-  display: inline;
-  height: auto;
-  width: 100%;
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
 }
 
 #wrapper {
@@ -125,10 +131,10 @@ img {
   /* overflow: hidden; */
   position: relative;
   cursor: pointer;
-  height: 200px;
-  width: 155px;
-  padding-left: 5px;
-  padding-right: 5px;
+  height: 24vw;
+  width: 18vw;
+  padding-left: 1px;
+  padding-right: 1px;
   border-radius: 10px;
   /* border: 5px solid red; */
   margin: auto;
@@ -138,7 +144,6 @@ img {
   width: 100%;
   height: 100%; 
   position: absolute;
-  border-radius: 10px;
   margin: auto;
   /* border: 5px solid green; */
 }
@@ -262,6 +267,10 @@ img {
   }
   .image-cropper {
     max-width: calc(225px - 10%);
+  }
+  .image-container {    
+    height: 230px;
+    width: 170px;
   }
   .popup .popuptext {
     width: 90vw;
