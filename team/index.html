@@ -51,10 +51,24 @@
       </p>
       <br>
       
-      <div class="tab">
-        <button id="init" class="tablinks" onclick="openTab(0, event, 'Team')">Current Members</button>
-        <button class="tablinks" onclick="openTab(0, event, 'Alum')">Alumni</button>
-        <button class="tablinks" onclick="openTab(0, event, 'Mentor')">Mentors</button>
+      <!-- <div class="tab">
+      <button id="init" class="tablinks" onclick="openTab(0, event, 'Team')">Current Members</button>
+      <button class="tablinks" onclick="openTab(0, event, 'Alum')">Alumni</button>
+      <button class="tablinks" onclick="openTab(0, event, 'Mentor')">Mentors</button>
+      </div> -->
+      
+      <div class="colorFade">
+        <div id="slide" class="slider">
+          <button id="left" class="tablinks left" onclick="openTab(0, event, 'Alum');left();">
+            <h1>Alumni</h1>
+          </button>
+          <button id="center" class="tablinks center" onclick="openTab(0, event, 'Team');center();"> 
+            <h1>Members</h1>
+          </button>
+          <button id="right" class="tablinks right" onclick="openTab(0, event, 'Mentor');right();">
+            <h1>Mentors</h1>
+          </button>
+        </div>
       </div>
       
       <div id="Team" class="tabcontent">

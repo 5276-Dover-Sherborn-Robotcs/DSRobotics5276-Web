@@ -31,8 +31,9 @@ function reveal() {
 
 window.addEventListener("scroll", reveal);
 
-//change between alumni and students tab
+//change between alumni, members, mentors tabs
 var i, tabcontent, tablinks;
+const width = window.innerWidth;
 
 function openTab(load, evt, tab) {
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -44,14 +45,70 @@ function openTab(load, evt, tab) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
   if (load == 1){
-    document.getElementById('init').className += " active";
+    document.getElementById('center').className += " active";
+    //center the members tab
+    document.getElementById('slide').left += width / 2;
   }
   document.getElementById(tab).style.display = "block";
-  if (evt.currentTarget.classList.contains('active')){
+  //apply active trait for new css properties
+  if (evt.currentTarget.classList.contains("active")){
     evt.currentTarget.className -= " active";
   }
-  else {
+  else{
     evt.currentTarget.className += " active";
+  }
+}
+
+// control animation for centering the horizontal tab buttons
+const l = document.getElementById('left');
+const r = document.getElementById('right');
+const c = document.getElementById('center');
+const tabs = document.querySelectorAll(".tablinks");
+
+function sort(){
+  for (let i = 0; i < tabs.length; i++){
+    tabs[i].classList.remove("slideLeft");
+    tabs[i].classList.remove("slideRight");
+    tabs[i].classList.remove("slideCenterLeft");
+    tabs[i].classList.remove("slideCenterRight");
+    tabs[i].classList.remove("slideCrossLeft");
+    tabs[i].classList.remove("slideCrossRight");
+  }
+}
+function add(givenClass){
+  for (let i = 0; i < tabs.length; i++){
+    tabs[i].classList.add(givenClass);
+  }
+}
+
+function left(){
+  if (tabs[0].classList.contains("slideLeft")){
+    sort();
+    add("slideCrossRight");
+  }
+  else{
+    sort()
+    add("slideRight");
+  }
+}
+function center(){
+  if (tabs[0].classList.contains("slideLeft") || tabs[0].classList.contains("slideCrossLeft")){
+    sort();
+    add("slideCenterLeft");
+  }
+  else if (tabs[0].classList.contains("slideRight") || tabs[0].classList.contains("slideCrossRight")){
+    sort();
+    add("slideCenterRight");
+  }
+}
+function right(){
+  if (tabs[0].classList.contains("slideRight")){
+    sort();
+    add("slideCrossLeft");
+  }
+  else{
+    sort()
+    add("slideLeft");
   }
 }
 
