@@ -15,7 +15,7 @@
 }
 
 /* Clear floats after the columns */
-.row{
+.row {
   width: 100%;
 }
 .row:after {
@@ -23,7 +23,7 @@
   display: table;
   clear: both;
 }
-.maininfo{
+.maininfo {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -31,12 +31,12 @@
   margin-bottom: 200px;
 }
 
-h1{
+h1 {
   padding: 10px;
   font-weight: 150;
   font-size: 60px;
 }
-p{
+p {
   font-size: 17px;
 }
 img {
@@ -53,7 +53,7 @@ img {
   position: relative;
   margin: auto;
 }
-ul li{
+ul li {
   display: list-item;
 }
 ul li::marker {
@@ -131,7 +131,6 @@ ul li::marker {
   opacity: 1;
 }
 
-
 @media screen and (max-width: 1000px) {
   .column {
     width: 100%;
@@ -141,7 +140,7 @@ ul li::marker {
   .column2 {
     width: 100%;
   }
-  .maininfo{
+  .maininfo {
     margin-bottom: 300px;
   }
 }
