@@ -44,26 +44,25 @@ function openTab(load, evt, tab) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
   if (load == 1) {
-<<<<<<< Updated upstream
+    // <<<<<<< Updated upstream
     document.getElementById("center").className += " active";
     //center the members tab
     document.getElementById("slide").left += width / 2;
   }
   document.getElementById(tab).style.display = "block";
   //apply active trait for new css properties
-=======
-    document.getElementById("init").className += " active";
-  }
-  document.getElementById(tab).style.display = "block";
->>>>>>> Stashed changes
-  if (evt.currentTarget.classList.contains("active")) {
-    evt.currentTarget.className -= " active";
-  } else {
-    evt.currentTarget.className += " active";
-  }
+  // =======
+  document.getElementById("init").className += " active";
+}
+document.getElementById(tab).style.display = "block";
+// >>>>>>> Stashed changes
+if (evt.currentTarget.classList.contains("active")) {
+  evt.currentTarget.className -= " active";
+} else {
+  evt.currentTarget.className += " active";
 }
 
-<<<<<<< Updated upstream
+// <<<<<<< Updated upstream
 // control animation for centering the horizontal tab buttons
 const l = document.getElementById("left");
 const r = document.getElementById("right");
@@ -119,14 +118,14 @@ function right() {
     add("slideLeft");
   }
 }
-=======
+
 // // Slideshow on covid years page
->>>>>>> Stashed changes
+//  Stashed changes
 
 // let slideIndex = 1;
 // showSlides(slideIndex);
 
-<<<<<<< Updated upstream
+// <<<<<<< Updated upstream
 // let slideIndex = 1;
 // showSlides(slideIndex);
 
@@ -156,7 +155,7 @@ function right() {
 //   captionText.innerHTML = dots[slideIndex-1].alt;
 // }
 
-=======
+// =======
 // function plusSlides(n) {
 //   showSlides((slideIndex += n));
 // }
@@ -188,7 +187,7 @@ function right() {
 // }
 
 //////
->>>>>>> Stashed changes
+// >>>>>>> Stashed changes
 ///////////////////////////////////////
 // Slider
 const slider = function () {
