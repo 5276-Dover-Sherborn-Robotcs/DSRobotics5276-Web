@@ -1,15 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
 
 :root {
-  /*   --main-bg-color: #d7e7f9; */
+/*   --main-bg-color: #d7e7f9; */
   --main-bg-color: rgba(215, 231, 249);
   --header-color: #061628;
   --sub-header-color: #4b91e2;
-  --text-color: #e0f2ff;
+  --text-color: #E0F2FF;
   --footer-text-color: #d7e7f9;
 }
 
-html {
+html{
   background: var(--main-bg-color);
 }
 
@@ -21,9 +21,7 @@ body {
   flex-direction: column;
 }
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0; padding: 0; box-sizing: border-box;
   font-family: Roboto;
 }
 .topnav {
@@ -34,21 +32,17 @@ body {
   width: 100%;
   text-align: center;
 }
-.topnav a.active {
+.topnav a.active{
   position: relative;
   float: left;
-
-  align-items: right;
   display: block;
   color: var(--text-color);
   text-decoration: none;
-  font-size: calc(10px + 4vw); /*<!--min font size--!> */
+  font-size: calc(10px + 4vw); /*min font size*/
   margin: auto;
-  /* font-size: 14px; */
 }
-.topnav a.logo1 img {
+.topnav a.logo1 img{
   float: left;
-  /* align-items: center; */
   display: block;
   width: auto;
   height: 100%;
@@ -80,91 +74,90 @@ body {
 } */
 nav {
   z-index: 3;
-  width: 100%;
-  background-color: var(--header-color);
-  display: block;
-  justify-content: space-between;
-  float: right;
+	width: 100%; 
+	background-color: var(--sub-header-color); 
+	display: block;
+	justify-content: space-between;
+  float: left;
+  filter: drop-shadow(0px 2px 4px black);
 }
 nav .nav-bar {
   width: 100%;
-  padding: 20px;
-  display: flex;
+	padding: 20px; 
+	display: flex; 
 }
 nav .nav-bar .nav-bar_item {
-  list-style-type: none;
-  padding: 0px 20px;
-  /*   border: 1px solid lightcoral; */
+	list-style-type: none;
+	padding: 0px 20px;
+/*   border: 1px solid lightcoral; */
 }
 nav .nav-bar .dropdown {
-  position: relative;
+	position: relative;
 }
 nav .nav-bar .dropdown:after {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 5px;
-  width: 7px;
-  height: 7px;
-  cursor: pointer;
-  transform: rotate(-45deg);
-  border-left: 2px solid var(--text-color);
-  border-bottom: 2px solid var(--text-color);
-  transition: 0.2s ease-in-out;
+	content: "";
+	position: absolute;
+	right: 0;
+	top: 5px;
+	width: 7px;
+	height: 7px;
+	cursor: pointer;
+	transform: rotate(-45deg);
+	border-left: 2px solid var(--text-color);
+	border-bottom: 2px solid var(--text-color);
+	transition: 0.2s ease-in-out;
 }
-nav .nav-bar .dropdown:hover:after {
-  transform: rotate(135deg);
+nav .nav-bar .dropdown:hover:after{
+	transform: rotate(135deg);
 }
 nav .nav-bar .dropdown .project {
   z-index: 4;
-  position: absolute;
-  transform: translateX(-20px) translateY(5px);
-  width: 110px;
-  background-color: var(--sub-header-color);
-  padding: 20px;
-  border-radius: 10px;
-  height: 0px;
-  overflow: hidden;
-  visibility: hidden;
-  transition: 0.2s ease-in-out;
+	position: absolute;
+	transform: translateX(-20px) translateY(5px);
+	width: 110px;
+	background-color: var(--sub-header-color);
+	padding: 20px;
+	border-radius: 10px;
+	height: 0px;
+	overflow: hidden;
+	visibility: hidden;
+	transition: 0.2s ease-in-out;
 }
-nav .nav-bar .dropdown:hover .project {
-  height: 200px;
-  visibility: visible;
+nav .nav-bar .dropdown:hover .project{
+	height: 200px;
+	visibility: visible;
 }
 nav .nav-bar .dropdown .project .drop-item {
-  list-style-type: none;
-  margin-bottom: 10px;
+	list-style-type: none;
+	margin-bottom: 10px;
 }
 
 nav .nav-bar .nav-bar_item a {
-  position: relative;
-  display: block;
-  padding-bottom: 5px;
-  text-decoration: none;
-  color: var(--text-color);
-  text-transform: uppercase;
+	position: relative;
+	display: block; 
+	padding-bottom: 5px;
+	text-decoration: none;
+	color: var(--text-color);
+	text-transform: uppercase;
 }
 nav .nav-bar .nav-bar_item a:after {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: var(--text-color);
-  transition: 0.1s ease-in-out;
+	content: "";
+	position: absolute;
+	width: 0%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: var(--text-color);
+	transition: 0.1s ease-in-out;
 }
 nav .nav-bar .nav-bar_item a:hover:after {
-  width: 100%;
+	width: 100%;
 }
 
 @media screen and (max-width: 450px) {
-  /*   hide elements of nav bar when screen is too small */
-  .nav-bar li:not(:first-child) {
-    display: none;
-  }
-  /*   display menu icon at righthand side of screen */
+/*   hide elements of nav bar when screen is too small */
+  .nav-bar li:not(:first-child) {display: none;} 
+/*   display menu icon at righthand side of screen */
   .nav-bar .icon {
     margin-left: auto;
     float: right;
@@ -175,37 +168,37 @@ nav .nav-bar .nav-bar_item a:hover:after {
 }
 
 @media screen and (max-width: 450px) {
-  /*   set relative position of items; */
-  .nav-bar.responsive {
+/*   set relative position of items; */
+  .nav-bar.responsive { 
     position: relative;
     display: inline-block;
   }
-  /*   menu icon returns to init position after closing menu */
+/*   menu icon returns to init position after closing menu */
   .nav-bar.responsive {
     width: 100%;
     overflow: hidden;
   }
   .nav-bar.responsive .icon {
-    /*    make this stay in its pre-menu position */
+/*    make this stay in its pre-menu position */
     display: none;
   }
   .nav-bar.responsive li {
     width: 100%;
     float: none;
-    position: relative;
-    display: block;
+  	position: relative;
+  	display: block;   
     margin-right: auto;
-    text-decoration: none;
+  	text-decoration: none;
   }
-  /*   shift lift left, keeps underline proerties */
-  .nav-bar.responsive li:after {
-    content: "";
-    position: absolute;
+/*   shift lift left, keeps underline proerties */
+  .nav-bar.responsive li:after{
+  	content: "";
+  	position: absolute;
     margin-left: auto;
   }
-  /*   side menu transition */
-  /*   when the seasons tab is not hovered */
-  .nav-bar.responsive .dropdown .project {
+/*   side menu transition */
+/*   when the seasons tab is not hovered */
+  .nav-bar.responsive .dropdown .project{
     overflow: hidden;
     visibility: hidden;
     display: block;
@@ -213,21 +206,22 @@ nav .nav-bar .nav-bar_item a:hover:after {
     width: 80%;
     margin-left: auto;
     padding: 0px;
-    /*     border: 1px solid yellow; */
+/*     border: 1px solid yellow; */
     border-radius: 0px;
     transform: translateX(-20px) translateY(5px);
   }
-  /*   when hovered */
+/*   when hovered */
   .nav-bar.responsive .dropdown:hover .project {
-    height: 100%;
-    visibility: visible;
+  	height: 100%;
+  	visibility: visible;
   }
   .nav-bar.responsive .dropdown .project .drop-item {
-    margin-bottom: 5px;
+  	margin-bottom: 5px;
   }
 }
 
 /* !--- footer --! */
+
 
 .footer-distributed {
   z-index: 2;
@@ -259,7 +253,7 @@ nav .nav-bar .nav-bar_item a:hover:after {
   color: var(--text-color);
   margin: 0 0 10px;
   padding: 0;
-  transition: ease 0.25s;
+  transition: ease .25s;
 }
 
 .footer-distributed p.footer-links a {
@@ -267,7 +261,7 @@ nav .nav-bar .nav-bar_item a:hover:after {
   line-height: 1.8;
   text-decoration: none;
   color: inherit;
-  transition: ease 0.25s;
+  transition: ease .25s;
 }
 
 .footer-distributed .footer-links a:before {
@@ -300,7 +294,7 @@ nav .nav-bar .nav-bar_item a:hover:after {
   text-align: center;
   line-height: 35px;
   margin-left: 3px;
-  transition: all 0.25s;
+  transition:all .25s;
 }
 
 .footer-distributed .footer-right p {
@@ -312,20 +306,14 @@ nav .nav-bar .nav-bar_item a:hover:after {
   margin-left: 3px;
 }
 
-.footer-distributed .footer-right a:hover {
-  transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-}
+.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
 
-.footer-distributed p.footer-links a:hover {
-  text-decoration: underline;
-}
+.footer-distributed p.footer-links a:hover{text-decoration:underline;}
 
 /* resize responsive */
 
 @media (max-width: 1000px) {
-  .footer-distributed .footer-left,
-  .footer-distributed .footer-right {
+  .footer-distributed .footer-left, .footer-distributed .footer-right {
     text-align: center;
   }
   .footer-distributed .footer-right {
