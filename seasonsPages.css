@@ -228,6 +228,13 @@ ul li::marker {
   opacity: 1;
 }
 
+.column2 {
+  float: left;
+  width: 33.33%;
+  height: 300px;
+  padding: 10px;
+}
+
 @media screen and (max-width: 1000px) {
   .column {
     width: 100%;
