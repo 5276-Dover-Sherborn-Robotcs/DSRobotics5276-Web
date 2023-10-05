@@ -35,9 +35,6 @@ body {
   text-align: center;
 }
 .topnav a.active {
-  position: relative;
-  float: left;
-
   align-items: right;
   display: block;
   color: var(--text-color);
@@ -65,26 +62,13 @@ body {
   font-size: calc(10px + 2vw);
 }
 
-/* .topnav a:hover {
-  text-shadow: #FC0 0.2em 0 0.3em;
-  color: white;
-} */
-
-/* .topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-} */
-
-/* .topnav .icon {
-  display: none;
-} */
 nav {
   z-index: 3;
   width: 100%;
   background-color: var(--header-color);
   display: block;
   justify-content: space-between;
-  float: right;
+  right: 0;
 }
 nav .nav-bar {
   width: 100%;
