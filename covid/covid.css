@@ -201,3 +201,35 @@ h4 {
   margin-bottom: 1.5rem;
   text-align: center;
 }
+@media (max-width: 1000px) {
+  .slider__btn--left,
+  .slider__btn--right {
+    position: absolute;
+    border: none;
+    background: rgba(255, 255, 255, 0.7);
+    font-family: inherit;
+    color: #333;
+    border-radius: 50%;
+    height: 1.7rem;
+    width: 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 50px;
+  }
+
+  .testimonial__header {
+    float: none;
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 100px;
+  }
+  img {
+    size: 10%;
+    width: 190px;
+    height: 160px;
+    margin-bottom: 100px;
+  }
+  .dots {
+    margin-bottom: 100px;
+  }
+}
