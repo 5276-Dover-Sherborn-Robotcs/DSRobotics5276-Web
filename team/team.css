@@ -287,10 +287,10 @@ button h1{
   /* overflow: hidden; */
   position: relative;
   cursor: pointer;
-  height: 24vw;
-  width: 17vw;
-  max-width: 190px;
-  max-height: 250px;
+  height: 19vw;
+  width: 14vw;
+  /* max-width: 190px;
+  max-height: 250px; */
   padding-left: 1px;
   padding-right: 1px;
   border-radius: 10px;
