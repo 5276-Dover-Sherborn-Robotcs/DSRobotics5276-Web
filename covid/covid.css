@@ -17,8 +17,7 @@
   /* GENERAL ELEMENTS */
   .section {
     padding: 15rem 3rem;
-    border-top: 1px solid #ddd;
-  
+    border-top: none;
     transition: transform 1s, opacity 1s;
   }
   
@@ -31,42 +30,6 @@
     max-width: 80rem;
     margin: 0 auto 8rem auto;
   }
-  
-  /* .btn {
-    display: inline-block;
-    background-color: var(--color-primary);
-    font-size: 1.6rem;
-    font-family: inherit;
-    font-weight: 500;
-    border: none;
-    padding: 1.25rem 4.5rem;
-    border-radius: 10rem;
-    cursor: pointer;
-    transition: all 0.3s;
-  } */
-  
-  /* .btn:hover {
-    background-color: var(--color-primary-darker);
-  }
-  
-  .btn--text {
-    display: inline-block;
-    background: none;
-    font-size: 1.7rem;
-    font-family: inherit;
-    font-weight: 500;
-    color: var(--color-primary);
-    border: none;
-    border-bottom: 1px solid currentColor;
-    padding-bottom: 2px;
-    cursor: pointer;
-    transition: all 0.3s;
-  } */
-  
-  /* This is BAD for accessibility! Don't do in the real world! */
-  /* button:focus {
-    outline: none;
-  } */
   
   img {
     transition: filter 0.5s;
@@ -131,11 +94,10 @@
     position: absolute;
     top: 50%;
     z-index: 10;
-  
     border: none;
-    background: rgba(255, 255, 255, 0.7);
+    /* background: rgba(255, 255, 255, 0.7); */
     font-family: inherit;
-    color: #333;
+    /* color: #333; */
     border-radius: 50%;
     height: 5.5rem;
     width: 5.5rem;
@@ -220,3 +182,36 @@
     margin-bottom: 3.5rem;
     color: black;
   } */
+
+  @media (max-width: 1200px) {
+    .slider__btn--left,
+    .slider__btn--right {
+      position: absolute;
+      border: none;
+      background: rgba(255, 255, 255, 0.7);
+      font-family: inherit;
+      color: #333;
+      border-radius: 50%;
+      height: 1.7rem;
+      width: 1.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 50px;
+    }
+  
+    .testimonial__header {
+      float: none;
+      text-align: center;
+      font-size: 26px;
+      margin-bottom: 100px;
+    }
+    img {
+      width: 49vw;
+      height: 40vw;
+      margin-bottom: 100px;
+    }
+    .dots {
+      margin-bottom: 100px;
+    }
+  }
+  
