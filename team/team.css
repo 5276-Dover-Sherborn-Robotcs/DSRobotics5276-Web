@@ -261,6 +261,18 @@ button h1{
   opacity: 1;
 }
 
+.slide{
+  position: relative;
+  transform: translateX(-150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.slide.active{
+  transform: translateX(0);
+  opacity: 1;
+}
+
 #wrapper {
   padding:0px;
   width:100%;
