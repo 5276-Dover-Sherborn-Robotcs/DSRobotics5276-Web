@@ -42,6 +42,7 @@ body {
   font-size: calc(10px + 4vw); /*<!--min font size--!> */
   margin: auto;
   /* font-size: 14px; */
+  margin-right: 100px;
 }
 .topnav a.logo1 img {
   float: left;
