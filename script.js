@@ -12,7 +12,10 @@ function responsive() {
   }
 }
 
-// reveal team images and section titles as you scroll
+// reveal team images and section titles as you scroll and initial sections on page load
+function myFunction() {
+  alert("hello");
+}
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
 
