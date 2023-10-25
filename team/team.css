@@ -433,6 +433,9 @@ button h1{
   .title{
     margin-left: 0%;
   }
+  .image-container:active .image-caption{
+    opacity:1;
+  }
 }
 @media screen and (max-width: 650px) {
   /* one image/person/bio per row */
